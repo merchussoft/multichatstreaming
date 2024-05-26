@@ -14,7 +14,7 @@ const io = socketIo(server)
 // settings
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-app.set('port', process.env.PORT_APP || 3020);
+app.set('port', process.env.PORT || 3020);
 
 
 //middleware 
