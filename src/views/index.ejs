@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiStream chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1>MultiStream Chat</h1>
+    </header>
+
+
+    <main class="main-content">
+
+        <form id="streamForm">
+            <input type="text" id="username" placeholder="TikTok Username" required>
+            <button type="submit">Start Stream</button>
+        </form>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="user-info">
+                    <img src="/assets/img/tiktok-logo.png" alt="tiktok-logo" class="user-avatar">
+                    <div class="user-name">TikTok</div>
+                </div>
+            </div>
+
+
+            <div class="chat-messages" id="chat-messages"></div>
+
+            <div class="chat-input" id="chat-input">
+                <div class="input-label" id="input-label">Escribe un mensaje...</div>
+            </div>
+        </div>
+    </main>
+<script src="/js/main.js"></script>
+</body>
+</html>
